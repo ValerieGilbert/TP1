@@ -216,6 +216,9 @@ html {
 	margin-left: 30px;
 }
 
-.fond {
-	
+.fond svg {
+	enable-background:new 0 0 1024 768;
+}
+.fond svg rect {
+	fill:url(#SVGID_1_);
 }
