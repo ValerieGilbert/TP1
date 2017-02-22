@@ -84,5 +84,94 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #262262;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==================================================== PARALLAX ==================*/
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+.parallax__layer--fond {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  height: 100%;
+  z-index: -2;
+}
+
+.parallax__layer--fondEau {
+  -webkit-transform: translateZ(-3px) scale(4.2);
+          transform: translateZ(-3px) scale(4.2);
+  height: 100%;
+  z-index: -1;
+}
+
+.parallax__layer--ile {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+  height: 100%;
+  z-index: 0;
+}
+
+.parallax__layer--deco {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+  height: 100%;
+  z-index: 0;
+}
+
+.parallax__layer--eau3 {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+  height: 100%;
+  z-index: 1;
+}
+
+.parallax__layer--eau2 {
+  -webkit-transform: translateZ(-0.5px) scale(1.8);
+          transform: translateZ(-0.5px) scale(1.8);
+  height: 100%;
+  z-index: 2;
+}
+
+.parallax__layer--eau1 {
+  -webkit-transform: translateZ(-0.2px) scale(1.5);
+          transform: translateZ(-0.2px) scale(1.5);
+  height: 100%;
+  z-index: 3;
+}
+
+.bleu {
+	height: 1000px;
+	width: 100%;
+	background-color: #262262;
+	margin-top: -10px;
+
+}
