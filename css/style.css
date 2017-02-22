@@ -90,11 +90,12 @@ video {
 
 body,
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
   background-color: #262262;
-  max-width: 100%;
-  overflow-x: hidden;
+  
 }
 
 /* ==================================================== PARALLAX ==================*/
@@ -168,10 +169,53 @@ html {
   z-index: 3;
 }
 
+/* ==================================================== CONTENU ==================*/
 .bleu {
 	height: 1000px;
 	width: 100%;
 	background-color: #262262;
 	margin-top: -10px;
+}
 
+.bleu p {
+	text-align: center;
+	margin-bottom: 50px;
+	color: white;
+	font-family: Fantasy;
+}
+
+.flex {
+	position: relative;
+	height: 400px;
+	width: 400px;
+	margin: 0 auto;
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+
+	    -ms-flex-wrap: wrap;
+
+	        flex-wrap: wrap; 
+
+	-webkit-box-pack: center; 
+
+	    -ms-flex-pack: center; 
+
+	        justify-content: center;
+
+}
+
+/* ==================================================== SVG ==================*/
+
+.bulle {
+	stroke:white;
+	stroke-width:0.1;
+	fill:none;
+	margin-left: 30px;
+}
+
+.fond {
+	
 }
