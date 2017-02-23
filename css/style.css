@@ -227,9 +227,39 @@ html {
   animation: anim 5s infinite;
 }
 
+.ile svg {
+  enable-background:new 0 0 1024 768;
+}
 
+.ile path {
+  fill:#39273D;
+}
 
- .eau2, .eau3, .fondEau {
+.eau3 svg {
+  enable-background:new 0 0 1024 768;
+}
+
+.eau3 path {
+  fill:url(#SVGID_3_);
+}
+
+.eau2 svg {
+  enable-background:new 0 0 1024 768;
+}
+
+.eau2 path {
+  fill:url(#SVGID_4_);
+}
+
+.eau1 svg {
+  enable-background:new 0 0 1024 768;
+}
+
+.eau1 path {
+  fill:url(#SVGID_5_);
+}
+
+ .eau1 path, .eau2, .eau3, .fondEau {
   stroke:LightGoldenRodYellow ;
   stroke-width:1px;
   stroke-dasharray: -1000;
