@@ -227,6 +227,16 @@ html {
   animation: anim 5s infinite;
 }
 
+
+
+ .eau2, .eau3, .fondEau {
+  stroke:LightGoldenRodYellow ;
+  stroke-width:1px;
+  stroke-dasharray: -1000;
+  stroke-dashoffset: 1000;
+  animation: anime 5s infinite;
+}
+
 @keyframes anim {
     from {
       stroke-width:0.1px;
@@ -238,5 +248,19 @@ html {
 
     to {
      stroke-width:0.1px;
+  }
+}
+
+@keyframes anime {
+    from {
+      stroke-dasharray: 200;
+    }
+
+    50% {
+      stroke-dasharray: 220;
+    }
+
+    to {
+     stroke-dasharray: 200;
   }
 }
