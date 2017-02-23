@@ -9,7 +9,6 @@
     <link href="less/style.less" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="script/script.js"></script>
 
 </head>
 <body>
@@ -36,7 +35,7 @@
 		 </g>
 
 <!-- =========================================================== FOND EAU ========== -->
-		 <g class="parallax__layer parallax__layer--fondEau">
+		 <g class="parallax__layer parallax__layer--fondEau fondEau">
 		 	 <svg version="1.1"
 		 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="512" y1="705" x2="512" y2="282.5862">
@@ -68,7 +67,7 @@
 		 </g>
 
 <!-- =========================================================== EAU 3 ============ -->	
-		 <g class="parallax__layer parallax__layer--eau3">
+		 <g class="parallax__layer parallax__layer--eau3 eau3">
 			 <svg version="1.1"
 				 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 			 	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="512" y1="768" x2="512" y2="345.5172">
@@ -87,7 +86,7 @@
 		 </g>
 
 <!-- =========================================================== EAU 2 ============= -->
-		<g class="parallax__layer parallax__layer--eau2">
+		<g class="parallax__layer parallax__layer--eau2 eau2">
 			<svg version="1.1"
 					 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 			<g id="test">	
@@ -107,7 +106,7 @@
 		</g>
 
 <!-- =========================================================== EAU 1 ============= -->
-		<g class="parallax__layer parallax__layer--eau1">
+		<g class="parallax__layer parallax__layer--eau1 eau1">
 			<svg version="1.1"
 					 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 				<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="512" y1="768" x2="512" y2="529.1379">
@@ -117,10 +116,11 @@
 				<path style="fill:url(#SVGID_5_);" d="M0,539.502c0,0,115.138,26.704,230.655-10.365c5.172,0.862-17.241,40.517,192.241,39.655
 				s354.31-39.655,354.31-39.655S906.532,586.607,1024,579.265c0,45.562,0,188.735,0,188.735H0V539.502z"/>
 			</svg>
+<!-- ======================= CONTENANT AVEC LES FLEXBOX ======= -->
 			<div class="bleu">
-				<p>Bulles SVG disposées avec flex</p>
+				<p id="montexte">Bulles SVG disposées avec flex</p>
 				<div class="flex">
-						<svg id="test" class="bulle" height="100" width="100">
+						<svg id="rond" class="bulle" height="100" width="100">
 						<defs>
 						    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
 						      <stop offset="0%" style="stop-color:rgb(255,255,255);
@@ -128,7 +128,7 @@
 						      <stop offset="100%" style="stop-color:rgb(0,0,100);stop-opacity:0" />
 						    </radialGradient>
 						</defs>
-  							<circle cx="50" cy="50" r="50" fill="url(#grad1)"/>
+  							<circle id="rooond" cx="50" cy="50" r="50" fill="url(#grad1)"/>
 						</svg>
 						<svg class="bulle" height="100" width="100">
 						<defs>
@@ -195,7 +195,7 @@
 		</g>
 
 <!-- =========================================================== Maison et Palmier = -->
-		<g class="parallax__layer parallax__layer--deco">
+		<g class="parallax__layer parallax__layer--deco deco">
 			<svg version="1.1"
 						 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 				<polygon style="fill:#39273D;" points="504.793,290.345 399.621,290.345 399.621,155.862 500.544,184.893 "/>
@@ -216,5 +216,6 @@
 <!-- =============================================================================== -->
 
 	</div>
+    <script src="script/script.js"></script>
 </body>
 </html>
