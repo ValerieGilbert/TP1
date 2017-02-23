@@ -1,0 +1,1 @@
+// Les event listener marchent juste pas sur ma page pour une raison que j'ignore, j'ai donc abandonné les animations en js =(

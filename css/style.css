@@ -259,6 +259,18 @@ html {
   fill:url(#SVGID_5_);
 }
 
+.deco svg {
+  enable-background:new 0 0 1024 768;
+}
+
+.deco path {
+  fill:#39273D;
+}
+
+.deco polygon {
+  fill:#39273D;
+}
+
  .eau1 path, .eau2, .eau3, .fondEau {
   stroke:LightGoldenRodYellow ;
   stroke-width:1px;
