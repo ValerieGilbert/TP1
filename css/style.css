@@ -87,7 +87,6 @@ video {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 body,
 html {
   max-width: 100%;
@@ -95,19 +94,15 @@ html {
   height: 100%;
   width: 100%;
   background-color: #262262;
-  
 }
-
 /* ==================================================== PARALLAX ==================*/
-
 .parallax {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-perspective: 1px;
-          perspective: 1px;
+  perspective: 1px;
 }
-
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -119,190 +114,170 @@ html {
   background-size: 100%;
   height: 100%;
 }
-
 .parallax__layer--fond {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   height: 100%;
   z-index: -2;
 }
-
 .parallax__layer--fondEau {
   -webkit-transform: translateZ(-3px) scale(4.2);
-          transform: translateZ(-3px) scale(4.2);
+  transform: translateZ(-3px) scale(4.2);
   height: 100%;
   z-index: -1;
 }
-
 .parallax__layer--ile {
   -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
   height: 100%;
   z-index: 0;
 }
-
 .parallax__layer--deco {
   -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
   height: 100%;
   z-index: 0;
 }
-
 .parallax__layer--eau3 {
   -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
   height: 100%;
   z-index: 1;
 }
-
 .parallax__layer--eau2 {
   -webkit-transform: translateZ(-0.5px) scale(1.8);
-          transform: translateZ(-0.5px) scale(1.8);
+  transform: translateZ(-0.5px) scale(1.8);
   height: 100%;
   z-index: 2;
 }
-
 .parallax__layer--eau1 {
   -webkit-transform: translateZ(-0.2px) scale(1.5);
-          transform: translateZ(-0.2px) scale(1.5);
+  transform: translateZ(-0.2px) scale(1.5);
   height: 100%;
   z-index: 3;
 }
-
 /* ==================================================== CONTENU ==================*/
 .bleu {
-	height: 1000px;
-	width: 100%;
-	background-color: #262262;
-	margin-top: -10px;
+  height: 1000px;
+  width: 100%;
+  background-color: #262262;
+  margin-top: -10px;
 }
-
 .bleu p {
-	text-align: center;
-	margin-bottom: 50px;
-	color: white;
-	font-family: Fantasy;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-family: Fantasy;
 }
-
 .flex {
-	position: relative;
-	height: 400px;
-	width: 400px;
-	margin: 0 auto;
-	display: -webkit-box;
-
-	display: -ms-flexbox;
-
-	display: flex;
-
-	    -ms-flex-wrap: wrap;
-
-	        flex-wrap: wrap; 
-
-	-webkit-box-pack: center; 
-
-	    -ms-flex-pack: center; 
-
-	        justify-content: center;
-
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
 /* ==================================================== SVG ==================*/
-
 .bulle {
-	stroke:white;
-	stroke-width:0.1;
-	fill:none;
-	margin-left: 30px;
+  stroke: white;
+  stroke-width: 0.1;
+  fill: none;
+  margin-left: 30px;
 }
-
 .fond svg {
-	enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
 .fond svg rect {
-	fill:url(#SVGID_1_);
+  fill: url(#SVGID_1_);
 }
-
 .bulle {
   animation: anim 5s infinite;
 }
-
 .ile svg {
-  enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
-
 .ile path {
-  fill:#39273D;
+  fill: #39273D;
 }
-
 .eau3 svg {
-  enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
-
 .eau3 path {
-  fill:url(#SVGID_3_);
+  fill: url(#SVGID_3_);
 }
-
 .eau2 svg {
-  enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
-
 .eau2 path {
-  fill:url(#SVGID_4_);
+  fill: url(#SVGID_4_);
 }
-
 .eau1 svg {
-  enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
-
 .eau1 path {
-  fill:url(#SVGID_5_);
+  fill: url(#SVGID_5_);
 }
-
 .deco svg {
-  enable-background:new 0 0 1024 768;
+  enable-background: new 0 0 1024 768;
 }
-
 .deco path {
-  fill:#39273D;
+  fill: #39273D;
 }
-
 .deco polygon {
-  fill:#39273D;
+  fill: #39273D;
 }
-
- .eau1 path, .eau2, .eau3, .fondEau {
-  stroke:LightGoldenRodYellow ;
-  stroke-width:1px;
+.eau1 path,
+.eau3 {
+  stroke: LightGoldenRodYellow ;
+  stroke-width: 1px;
   stroke-dasharray: -1000;
   stroke-dashoffset: 1000;
   animation: anime 5s infinite;
 }
-
+.eau2,
+.eauFond {
+  stroke: LightGoldenRodYellow ;
+  stroke-width: 1px;
+  stroke-dasharray: -500;
+  stroke-dashoffset: 500;
+  animation: animee 5s infinite;
+}
 @keyframes anim {
-    from {
-      stroke-width:0.1px;
-    }
-
-    50% {
-      stroke-width:1px;
-    }
-
-    to {
-     stroke-width:0.1px;
+  from {
+    stroke-width: 0.1px;
+  }
+  50% {
+    stroke-width: 1px;
+  }
+  to {
+    stroke-width: 0.1px;
   }
 }
-
 @keyframes anime {
-    from {
-      stroke-dasharray: 200;
-    }
-
-    50% {
-      stroke-dasharray: 220;
-    }
-
-    to {
-     stroke-dasharray: 200;
+  from {
+    stroke-dasharray: 200;
+  }
+  50% {
+    stroke-dasharray: 220;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+@keyframes animee {
+  from {
+    stroke-dasharray: 200;
+  }
+  50% {
+    stroke-dasharray: 170;
+  }
+  to {
+    stroke-dasharray: 200;
   }
 }
